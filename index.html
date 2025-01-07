@@ -6,9 +6,20 @@
     <title>WeThinkAndWork</title>
     <script src="https://kit.fontawesome.com/5645b1461d.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "7xUnk0KD0sgGIdbl0",
+            });
+        })();
+    </script>
+    
 </head>
 <body>
     <!-- Navbar -->
@@ -79,13 +90,14 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2>Contact Us</h2>
-        <form action="#" method="post">
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" required></textarea>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <input type="text" id="subject" name="subject" placeholder="Your subject" required>
+            <textarea name="message" id="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
         </form>
-        <p>Email: wethinkandwork@example.com</p>
+        
     </section>
 
     <!-- Footer -->
@@ -93,6 +105,9 @@
         <p>by Mashigo VM &copy;2025 <a href="https://mashigovincent01.github.io/Hackathon01_PLP/"><i id="github-icon" class="fa-brands fa-github"></i></a>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js">
+        
+    </script>
+    <script src="index.js"></script>
 </body>
 </html>
