@@ -6,10 +6,15 @@
     
     
 }
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth;
+    scroll-padding-top: 50px; */
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 .blue-color{
@@ -29,7 +34,7 @@ body {
     padding-top: 20px;
     position: fixed;
     width: 100%; /* Prevent overflow */
-    z-index: 1000;
+    /* z-index: 1000; */
 }
 .logo {
     color: #fff;
@@ -99,7 +104,7 @@ section {
 }
 h2 {
     margin-bottom: 20px;
-    font-size: 28px;
+    font-size: 35px;
 }
 p {
     margin-bottom: 15px;
