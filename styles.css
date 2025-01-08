@@ -351,3 +351,7 @@ footer i:hover{
         margin-bottom: 40px;
     }
 }
+
+.hide{
+    display: none;
+}
