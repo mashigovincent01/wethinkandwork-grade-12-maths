@@ -355,3 +355,8 @@ footer i:hover{
 .hide{
     display: none;
 }
+
+.study-guides{
+    min-height: calc(100vh - 100px);
+    padding-top: 100px;
+}
